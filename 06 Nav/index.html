@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -10,31 +10,20 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <h3>Navbar</h3>
-            <div>
-                <ul>
-                    <li><button><strong>Home</strong></button></li>
-                    <li><button>Link</button></li>
-                    <li><select name="choices" id="form_choices">
-                            <option value="0">Dropdown</option>
-                            <optgroup label="Choices">
-                                <option value="1">First choice</option>
-                                <option value="2">Second choice</option>
-                                <option value="3">Third choice</option>
-                            </optgroup>
-                        </select></li>
-                    <li><button disabled>Disabled</button></li>
-                </ul>
-                <form>
-                    <input type="search" placeholder="Search">
-                    <button type="submit">Search</button>
-                </form>
-            </div>
-            <hr>
-        </nav>
-    </header>
+    <nav class="navbar">
+        <span id="title">Navbar</span>
+        <span class="hamburger-menu">=</span>
+        <ul class="nav-links">
+            <li><a href="#" id="home" autofocus>Home</a></li>
+            <li><a href="#" id="link">Link</a></li>
+            <li><a href="#" class="dropdown">Dropdown</a></li>
+            <li><button disabled>Disabled</button></li>
+            <li class="search">
+                <input type="text" placeholder="Search" name="search" class="search-input">
+                <button class="search-button">Search</button>
+            </li>
+        </ul>
+    </nav>
 </body>
 
 </html>

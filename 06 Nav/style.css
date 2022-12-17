@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Open+Sans:wght@300&family=Roboto:wght@400;500&display=swap');
+
+html {
+    font-family: "Roboto";
+    font-size: 24px;
+}
+
+.navbar {
+    background-color: rgb(42, 42, 58);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: 25px 10px;
+    font-size: 22px;
+}
+
+#title {
+    font-size: 32px;
+    color: white;
+}
+
+ul,
+li {
+    display: inline;
+    margin: 10px;
+}
+
+.dropdown::after {
+    content: '▾';
+    margin-left: 1ch;
+}
+
+.search {
+    position: absolute;
+    top: 0;
+    right: 40px;
+}
+
+.search-input {
+    padding: 12px;
+    border-radius: 6px;
+    width: 320px;
+    font-size: inherit;
+}
+
+button[disabled] {
+    border: none;
+    background: none;
+    color: rgb(117, 107, 107);
+    font-size: inherit;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li a {
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+li a:focus, #home {
+    color: white;
+}
+
+li a:link,
+li a:visited {
+    color: darkgray;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: rgb(33, 33, 53);
+}
+
+li a:active {
+    background-color: rgb(25, 25, 34);
+}
+
+.search-button {
+    border: 1px solid darkgreen;
+    border-radius: 5px;
+    padding: 12px;
+    width: 100px;
+    background: none;
+    color: darkgreen;
+    font-size: inherit;
+    margin-left: 6px;
+}
+
+.search-button:hover {
+    border: 1px solid yellow;
+    border-radius: 5px;
+    padding: 12px;
+    width: 100px;
+    font-size: inherit;
+    color: yellow;
+    margin-left: 6px;
+}
+
+.hamburger-menu {
+    display: none;
+    padding: 15px;
+}
+
+@media(max-width: 768px) {
+    .hamburger-menu {
+        font-size: 25px;
+        display: inline;
+        color: white;
+    }
+
+    .nav-links {
+        display: none;
+    }
+}
