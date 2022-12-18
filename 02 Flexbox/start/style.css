@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(roboto_fonts/Roboto-Regular.ttf);
+}
+html {
+    font-family: "Roboto";
+}
+.sidebar {
+    border: 1px solid red;
+    width: 200px;
+    display: flex;
+    margin-bottom: 1rem;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 50vw;
+    gap: 1rem;
+    background: linear-gradient(rgb(228, 243, 234), rgb(174, 107, 187));
+}
+
+#logo {
+    width: 200px;
+}
+
+.sidebar a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #2b2b2b;
+    display: block;
+    transition: 0.3s;
+    flex: 1;
+}
+
+.sidebar a:hover {
+    color: #2b2bb2;
+}
+
+.rounded-circle {
+    width: 100px;
+    border-radius: 100px;
+}
+
+.username {
+    text-align: center;
+    font-size: 24px;
+}
