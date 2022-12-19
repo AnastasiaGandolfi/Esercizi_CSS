@@ -1,0 +1,86 @@
+body {
+    background-color: #fafafa;
+    padding: 60px;
+    font-family: 'Droid Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.instagram-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.instagram-card {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgb(139, 138, 138), rgb(233, 226, 226));
+    border: 1px solid #f2f2f2;
+    border-radius: 20px;
+    width: 325px;
+}
+
+.image,
+img {
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.user-image {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    margin-left: 0.5rem;
+}
+
+.info {
+    flex: 1;
+}
+
+.fa-ellipsis-h {
+    margin: 0.5rem;
+}
+
+.user-name {
+    font-weight: bold;
+    color: #262626;
+    margin: 8px;
+}
+
+.date {
+    margin: 8px;
+    font-size: 13px;
+    color: white;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content-user {
+    font-weight: bold;
+    color: #262626;
+}
+
+@media (max-width: 768px) {
+    .instagram-container {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 375px) {
+    .instagram-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
